@@ -13,12 +13,3 @@ public class AlisonSpring1Application {
 		SpringApplication.run(AlisonSpring1Application.class, args);
 	}
 }
-
-@RestController
-@RequestMapping(path = "/")
-class TestController {
-	@RequestMapping(value = "hello/{name}", method = RequestMethod.GET)
-	public String hello(@PathVariable(value = "name") String name) {
-		return "Hello %s\n".formatted(name);
-	}
-}
