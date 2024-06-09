@@ -16,6 +16,27 @@ public class Product {
     private String type;
     private String sector;
 
+    @Override
+    public String toString() {
+        return "Product{" +
+            "id=" + id +
+            ", name='" + name + '\'' +
+            ", category='" + category + '\'' +
+            ", type='" + type + '\'' +
+            ", sector='" + sector + '\'' +
+            '}';
+    }
+
+    public Product() {
+    }
+
+    public Product(String name, String category, String type, String sector) {
+        this.name = name;
+        this.category = category;
+        this.type = type;
+        this.sector = sector;
+    }
+
     public Integer getId() {
         return id;
     }
