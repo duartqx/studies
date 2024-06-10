@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ostream>
 
 int main() {
     int a, b, result;
@@ -10,9 +11,7 @@ int main() {
 
     result = a + b;
 
-    std::cout << "Resultado: ";
-    std::cout << result;
-    std::cout << "\n";
+    std::cout << "Resultado: " << result << std::endl;
 
     return 0;
 }
