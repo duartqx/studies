@@ -1,8 +1,8 @@
 #include <iostream>
 int main() {
-    int in;
-    std::cout << "Digite um valor: ";
-    std::cin >> in;
-    std::cout << "Você definiu o valor: " << in << "\n";
+    int a, b;
+    std::cout << "Digite dois valores: ";
+    std::cin >> a >> b;
+    std::cout << "a: " << a << " b: " << b << "\n";
     return 0;
 }
