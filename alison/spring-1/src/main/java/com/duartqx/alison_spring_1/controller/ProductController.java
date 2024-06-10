@@ -26,8 +26,12 @@ public class ProductController {
 
     @RequestMapping(path = "", method = RequestMethod.POST)
     public Product create(@RequestBody ProductDTO productDTO) {
-        return productService.create(new Product(productDTO.name(),
-            productDTO.category(), productDTO.type(), productDTO.sector())
+        Product product = new Product(
+            productDTO.name(),
+            productDTO.category(),
+            productDTO.type(),
+            productDTO.sector()
         );
+        return productService.create(product);
     }
 }
